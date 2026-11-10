@@ -1,0 +1,25 @@
+[package]
+name = "filecleaner-app"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "FileCleaner"
+path = "src/main.rs"
+
+[features]
+# Captures automatiques de toutes les pages, pour la verification visuelle.
+shots = []
+
+[dependencies]
+filecleaner-core.workspace = true
+anyhow.workspace = true
+log.workspace = true
+rayon.workspace = true
+eframe = "0.37"
+image = { version = "0.25", default-features = false, features = ["jpeg", "png", "webp", "bmp", "gif", "tiff", "ico"] }
+rfd = "0.17"
+
+[build-dependencies]
+winresource = "0.1"

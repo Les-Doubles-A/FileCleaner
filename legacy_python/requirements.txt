@@ -1,0 +1,7 @@
+customtkinter>=5.2.2
+tkinterdnd2>=0.3.0
+send2trash>=1.8.2
+fpdf2>=2.7.9
+Pillow>=10.0.0
+python-magic-bin>=0.4.14 ; platform_system == "Windows"
+pypdf>=4.0.0
